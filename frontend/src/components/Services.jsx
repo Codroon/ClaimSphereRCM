@@ -129,7 +129,7 @@ const Services = () => {
 
           <p className="text-gray-600 text-lg leading-relaxed">
             From medical billing to credentialing, we offer end-to-end revenue cycle management 
-            services designed to maximize your healthcare organization's financial performance.
+            services designed to maximize your healthcare organization&apos;s financial performance.
           </p>
         </div>
 
