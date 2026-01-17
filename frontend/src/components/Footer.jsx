@@ -66,7 +66,7 @@ const Footer = () => {
             {/* Logo */}
             <div className="flex items-center mb-6">
               <img 
-                src="https://customer-assets.emergentagent.com/job_669b2369-d3e5-48aa-96b9-c999516fb39b/artifacts/9nastmyt_Gemini_Generated_Image_iy0ak9iy0ak9iy0a-removebg-preview.png"
+                src="https://customer-assets.emergentagent.com/job_669b2369-d3e5-48aa-96b9-c999516fb39b/artifacts/d9nyua1i_Gemini_Generated_Image_bhdz8obhdz8obhdz-removebg-preview.png"
                 alt="ClaimSphere RCM"
                 className="h-14 w-auto"
               />
