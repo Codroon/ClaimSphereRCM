@@ -78,7 +78,7 @@ const Testimonials = () => {
           </h2>
 
           <p className="text-white/70 text-lg leading-relaxed">
-            Don't just take our word for it. Here's what healthcare providers across the nation say about partnering with ClaimSphere.
+            Do not just take our word for it. Here is what healthcare providers across the nation say about partnering with ClaimSphere.
           </p>
         </div>
 
