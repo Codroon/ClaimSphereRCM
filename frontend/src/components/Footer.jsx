@@ -64,15 +64,12 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
             {/* Logo */}
-            <div className="flex items-center gap-3 mb-6">
-              <div className="relative">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#008080] to-[#50C878] flex items-center justify-center">
-                  <div className="w-8 h-8 rounded-full border-2 border-white/80 flex items-center justify-center">
-                    <div className="w-3 h-3 rounded-full bg-white"></div>
-                  </div>
-                </div>
-              </div>
-              <span className="text-2xl font-bold">{companyInfo.name}</span>
+            <div className="flex items-center mb-6">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_669b2369-d3e5-48aa-96b9-c999516fb39b/artifacts/6u2d3tef_Gemini_Generated_Image_iy0ak9iy0ak9iy0a.png"
+                alt="ClaimSphere RCM"
+                className="h-14 w-auto brightness-0 invert"
+              />
             </div>
 
             <p className="text-white/70 mb-6 leading-relaxed max-w-sm">
