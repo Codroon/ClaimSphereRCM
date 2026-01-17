@@ -45,7 +45,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="https://customer-assets.emergentagent.com/job_669b2369-d3e5-48aa-96b9-c999516fb39b/artifacts/6u2d3tef_Gemini_Generated_Image_iy0ak9iy0ak9iy0a.png"
+              src="https://customer-assets.emergentagent.com/job_669b2369-d3e5-48aa-96b9-c999516fb39b/artifacts/9nastmyt_Gemini_Generated_Image_iy0ak9iy0ak9iy0a-removebg-preview.png"
               alt="ClaimSphere RCM"
               className="h-12 w-auto"
             />
