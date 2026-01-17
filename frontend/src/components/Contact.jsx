@@ -47,7 +47,7 @@ const Contact = () => {
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1500));
     
-    toast.success('Thank you! We\'ll be in touch within 24 hours.', {
+    toast.success('Thank you! We will be in touch within 24 hours.', {
       description: 'A member of our team will reach out shortly.',
     });
     
