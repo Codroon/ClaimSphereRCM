@@ -138,7 +138,7 @@ const Contact = () => {
           }`}>
             <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-10">
               <h3 className="text-2xl font-bold text-[#003366] mb-2">Schedule Your Consultation</h3>
-              <p className="text-gray-600 mb-8">Fill out the form and we'll get back to you within 24 hours.</p>
+              <p className="text-gray-600 mb-8">Fill out the form and we will get back to you within 24 hours.</p>
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid sm:grid-cols-2 gap-5">
