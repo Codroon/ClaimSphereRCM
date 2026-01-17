@@ -29,10 +29,12 @@ const Testimonials = () => {
   // Auto-slide
   useEffect(() => {
     const interval = setInterval(() => {
-      handleNext();
+      setIsAnimating(true);
+      setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+      setTimeout(() => setIsAnimating(false), 500);
     }, 6000);
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, []);
 
   const handlePrev = () => {
     if (isAnimating) return;
