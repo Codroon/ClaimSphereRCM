@@ -68,7 +68,7 @@ const Footer = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_669b2369-d3e5-48aa-96b9-c999516fb39b/artifacts/6u2d3tef_Gemini_Generated_Image_iy0ak9iy0ak9iy0a.png"
                 alt="ClaimSphere RCM"
-                className="h-14 w-auto brightness-0 invert"
+                className="h-14 w-auto"
               />
             </div>
 
