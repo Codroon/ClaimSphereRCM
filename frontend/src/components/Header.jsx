@@ -43,20 +43,14 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="relative">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#003366] to-[#008080] flex items-center justify-center">
-                <div className="w-8 h-8 rounded-full border-2 border-white/80 flex items-center justify-center">
-                  <div className="w-3 h-3 rounded-full bg-[#50C878]"></div>
-                </div>
-              </div>
-              <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-[#50C878] rounded-full animate-pulse"></div>
-            </div>
-            <span className={`text-xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-[#003366]' : 'text-white'
-            }`}>
-              {companyInfo.name}
-            </span>
+          <div className="flex items-center">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_669b2369-d3e5-48aa-96b9-c999516fb39b/artifacts/6u2d3tef_Gemini_Generated_Image_iy0ak9iy0ak9iy0a.png"
+              alt="ClaimSphere RCM"
+              className={`h-12 w-auto transition-all duration-300 ${
+                isScrolled ? '' : 'brightness-0 invert'
+              }`}
+            />
           </div>
 
           {/* Desktop Navigation */}
