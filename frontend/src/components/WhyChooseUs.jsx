@@ -66,7 +66,7 @@ const WhyChooseUs = () => {
 
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
               ClaimSphere stands apart with our unwavering commitment to accuracy, compliance, 
-              and client success. Here's what makes us the preferred choice for healthcare providers nationwide.
+              and client success. Here is what makes us the preferred choice for healthcare providers nationwide.
             </p>
 
             {/* Key Highlights */}
