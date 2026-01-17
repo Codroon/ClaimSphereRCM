@@ -96,7 +96,7 @@ const Contact = () => {
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              Schedule a free consultation with our RCM experts. We'll analyze your current processes 
+              Schedule a free consultation with our RCM experts. We will analyze your current processes 
               and show you how ClaimSphere can help maximize your revenue.
             </p>
 
