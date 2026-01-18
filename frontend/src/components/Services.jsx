@@ -57,7 +57,7 @@ const ServiceCard = ({ service, index, isVisible }) => {
               {service.description}
             </p>
             
-            <div className="space-y-2 mb-4">
+            <div className="space-y-2">
               {service.features.map((feature, i) => (
                 <div key={i} className="flex items-center gap-2 text-sm">
                   <div className="w-1.5 h-1.5 bg-[#50C878] rounded-full"></div>
@@ -65,11 +65,6 @@ const ServiceCard = ({ service, index, isVisible }) => {
                 </div>
               ))}
             </div>
-
-            <button className="w-full py-3 bg-[#50C878] hover:bg-[#45b56a] rounded-xl font-semibold text-white transition-colors duration-300 flex items-center justify-center gap-2">
-              Learn More
-              <ArrowRight className="w-4 h-4" />
-            </button>
           </div>
         </div>
       </div>
