@@ -5,6 +5,7 @@ import { Toaster } from "./components/ui/sonner";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import DemoVideo from "./components/DemoVideo";
 import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Testimonials from "./components/Testimonials";
@@ -18,6 +19,7 @@ const LandingPage = () => {
       <main>
         <Hero />
         <About />
+        <DemoVideo />
         <Services />
         <WhyChooseUs />
         <Testimonials />
