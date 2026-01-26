@@ -134,6 +134,15 @@ const Header = ({ onPricingClick }) => {
               {link.label}
             </button>
           ))}
+          <button
+            onClick={() => {
+              setIsPricingModalOpen(true);
+              setIsMobileMenuOpen(false);
+            }}
+            className="text-[#003366] font-medium py-3 px-4 text-left hover:bg-[#008080]/10 rounded-lg transition-colors"
+          >
+            Pricing
+          </button>
           <Button
             onClick={() => scrollToSection('#contact')}
             className="mt-4 bg-[#50C878] hover:bg-[#45b56a] text-white font-semibold rounded-full"
@@ -142,6 +151,9 @@ const Header = ({ onPricingClick }) => {
           </Button>
         </nav>
       </div>
+
+      {/* Pricing Modal */}
+      <PricingModal isOpen={isPricingModalOpen} onClose={() => setIsPricingModalOpen(false)} />
     </header>
   );
 };
