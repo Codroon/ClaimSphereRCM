@@ -271,6 +271,8 @@ Organizations should start exploring AI coding solutions now, even if full imple
     category: "Technology"
   }
 ];
+
+export const aboutContent = {
   mission: "Through intuitive technology and expert revenue cycle management, Claim Sphere RCM empowers healthcare providers to optimize performance while minimizing administrative burden. Our client-centric approach is the foundation of our success.",
   vision: "Empowering healthcare organizations through precision, reliability, and client-focused revenue cycle management.",
   values: [
