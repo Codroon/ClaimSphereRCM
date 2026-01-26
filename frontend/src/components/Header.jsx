@@ -48,7 +48,7 @@ const Header = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_669b2369-d3e5-48aa-96b9-c999516fb39b/artifacts/d9nyua1i_Gemini_Generated_Image_bhdz8obhdz8obhdz-removebg-preview.png"
               alt="ClaimSphere RCM"
-              className={`h-12 w-auto absolute transition-opacity duration-500 ${
+              className={`h-16 w-auto absolute transition-opacity duration-500 ${
                 isScrolled ? 'opacity-0' : 'opacity-100'
               }`}
             />
@@ -56,7 +56,7 @@ const Header = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_669b2369-d3e5-48aa-96b9-c999516fb39b/artifacts/9nastmyt_Gemini_Generated_Image_iy0ak9iy0ak9iy0a-removebg-preview.png"
               alt="ClaimSphere RCM"
-              className={`h-12 w-auto transition-opacity duration-500 ${
+              className={`h-16 w-auto transition-opacity duration-500 ${
                 isScrolled ? 'opacity-100' : 'opacity-0'
               }`}
             />
