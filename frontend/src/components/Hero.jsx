@@ -126,8 +126,8 @@ const Hero = () => {
           <div className="absolute inset-8 rounded-full border-4 border-white/20 animate-spin" style={{ animationDuration: '10s' }}></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#008080] to-[#50C878] flex items-center justify-center shadow-2xl shadow-[#008080]/50 animate-pulse">
-              <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                <span className="text-white font-bold text-2xl">RCM</span>
+              <div className="w-24 h-24 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                <span className="text-white font-bold text-sm text-center leading-tight">ClaimSphere<br/>RCM</span>
               </div>
             </div>
           </div>
