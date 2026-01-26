@@ -12,9 +12,7 @@ export const companyInfo = {
 export const certifications = [
   { id: 1, name: "HIPAA Certified", logo: "HIPAA" },
   { id: 2, name: "AAPC Member", logo: "AAPC" },
-  { id: 3, name: "AHIMA Approved", logo: "AHIMA" },
-  { id: 4, name: "HBMA Member", logo: "HBMA" },
-  { id: 5, name: "SOC 2 Compliant", logo: "SOC2" }
+  { id: 3, name: "AHIMA Approved", logo: "AHIMA" }
 ];
 
 export const stats = [
