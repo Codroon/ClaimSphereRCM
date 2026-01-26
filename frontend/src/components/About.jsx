@@ -120,7 +120,7 @@ const About = () => {
             </h2>
 
             <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-              For over three decades, ClaimSphere has been at the forefront of healthcare revenue cycle management. 
+              For over half a decade, ClaimSphere has been at the forefront of healthcare revenue cycle management. 
               We combine deep industry expertise with cutting-edge technology to deliver exceptional results for our partners.
             </p>
 
