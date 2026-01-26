@@ -142,15 +142,16 @@ export const careers = [
 ];
 
 export const aboutContent = {
-  mission: "To empower healthcare providers with innovative revenue cycle solutions that optimize financial performance while allowing them to focus on what matters most—patient care.",
-  vision: "To be the most trusted partner in healthcare revenue cycle management, setting the industry standard for accuracy, compliance, and client success.",
+  mission: "Through intuitive technology and expert revenue cycle management, Claim Sphere RCM empowers healthcare providers to optimize performance while minimizing administrative burden. Our client-centric approach is the foundation of our success.",
+  vision: "Empowering healthcare organizations through precision, reliability, and client-focused revenue cycle management.",
   values: [
-    "Integrity in every transaction",
-    "Excellence in execution",
-    "Innovation in solutions",
-    "Partnership in success"
+    "Curiosity",
+    "Empathy",
+    "Integrity",
+    "Innovation",
+    "Excellence"
   ],
-  yearFounded: 1993,
-  employeeCount: "500+",
-  clientsServed: "2,000+"
+  yearFounded: 2021,
+  employeeCount: "50+",
+  clientsServed: "10+"
 };
