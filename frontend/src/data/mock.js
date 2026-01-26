@@ -17,9 +17,9 @@ export const certifications = [
 
 export const stats = [
   { id: 1, value: "99%", label: "Claim Accuracy Rate" },
-  { id: 2, value: "45%", label: "Reduction in Denials" },
-  { id: 3, value: "30+", label: "Years Experience" },
-  { id: 4, value: "500+", label: "Healthcare Partners" }
+  { id: 2, value: "99%", label: "Reduction in Denials" },
+  { id: 3, value: "5+", label: "Years Experience" },
+  { id: 4, value: "10+", label: "Healthcare Partners" }
 ];
 
 export const services = [
