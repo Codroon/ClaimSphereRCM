@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from './ui/button';
 import { companyInfo } from '../data/mock';
+import PricingModal from './PricingModal';
 
-const Header = () => {
+const Header = ({ onPricingClick }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isPricingModalOpen, setIsPricingModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
