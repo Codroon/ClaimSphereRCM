@@ -91,7 +91,7 @@ const About = () => {
                   </div>
                   <div>
                     <div className="text-sm text-gray-500">Established</div>
-                    <div className="text-lg font-semibold text-[#003366]">30+ Years Legacy</div>
+                    <div className="text-lg font-semibold text-[#003366]">5+ Years Legacy</div>
                   </div>
                 </div>
               </div>
