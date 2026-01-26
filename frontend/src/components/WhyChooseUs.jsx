@@ -76,19 +76,8 @@ const WhyChooseUs = () => {
                 <div className="text-white/80">First-Pass Claim Acceptance Rate</div>
               </div>
               <div className="bg-gradient-to-br from-[#008080] to-[#006666] rounded-2xl p-6 text-white">
-                <div className="text-4xl font-bold text-white mb-2">18</div>
+                <div className="text-4xl font-bold text-white mb-2">7</div>
                 <div className="text-white/80">Days Average in AR</div>
-              </div>
-            </div>
-
-            {/* HIPAA Badge */}
-            <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-2xl border border-gray-100">
-              <div className="w-16 h-16 rounded-xl bg-[#003366] flex items-center justify-center">
-                <Shield className="w-8 h-8 text-white" />
-              </div>
-              <div>
-                <div className="font-semibold text-[#003366]">HIPAA Compliant</div>
-                <div className="text-sm text-gray-600">Your data is protected with enterprise-grade security</div>
               </div>
             </div>
           </div>
