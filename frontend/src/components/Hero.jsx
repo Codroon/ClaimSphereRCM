@@ -147,12 +147,12 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-8 animate-fade-in-up">
             <span className="w-2 h-2 bg-[#50C878] rounded-full animate-pulse"></span>
-            <span className="text-white/90 text-sm font-medium">Trusted by 500+ Healthcare Providers</span>
+            <span className="text-white/90 text-sm font-medium">Trusted by 10+ Healthcare Providers</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            {companyInfo.tagline}
+            Trusted Healthcare Revenue Cycle Solutions For Healthcare Providers
           </h1>
 
           {/* Subheadline */}
