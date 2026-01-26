@@ -9,8 +9,10 @@ import DemoVideo from "./components/DemoVideo";
 import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Testimonials from "./components/Testimonials";
+import BlogSection from "./components/BlogSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import BlogPost from "./components/BlogPost";
 
 const LandingPage = () => {
   return (
@@ -23,6 +25,7 @@ const LandingPage = () => {
         <Services />
         <WhyChooseUs />
         <Testimonials />
+        <BlogSection />
         <Contact />
       </main>
       <Footer />
@@ -37,6 +40,7 @@ function App() {
         <Toaster position="top-right" richColors />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </BrowserRouter>
     </div>
