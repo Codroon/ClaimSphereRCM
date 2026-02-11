@@ -86,8 +86,8 @@ const BlogPost = () => {
             Back to Home
           </button>
 
-          {/* Category Badge */}
-          <span className="inline-block px-4 py-2 bg-[#50C878] rounded-full text-white text-sm font-medium mb-6">
+          {/* Category Badge - Text only, no button */}
+          <span className="inline-block text-[#50C878] text-sm font-medium mb-4">
             {blog.category}
           </span>
 
