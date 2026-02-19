@@ -44,7 +44,7 @@ const BlogPost = () => {
           </h3>
         );
       }
-      
+
       // Handle paragraphs with bold text
       const parts = paragraph.split(/(\*\*[^*]+\*\*)/g);
       return (
@@ -66,7 +66,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-[#003366] via-[#00294d] to-[#001a33]">
         <div className="absolute inset-0 opacity-10">
@@ -75,15 +75,15 @@ const BlogPost = () => {
             backgroundSize: '32px 32px'
           }}></div>
         </div>
-        
+
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Back Button */}
           <button
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/blog')}
             className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
-            Back to Home
+            Back to Blog
           </button>
 
           {/* Category Badge */}
@@ -157,7 +157,7 @@ const BlogPost = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-[#003366] mb-8">Related Articles</h2>
-          
+
           <div className="grid md:grid-cols-3 gap-6">
             {relatedBlogs.map((relatedBlog) => (
               <Link
