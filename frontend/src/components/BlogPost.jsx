@@ -32,12 +32,29 @@ const BlogPost = () => {
     );
   }
 
-  // Format content with proper paragraphs and bold text
+  // Format content with proper paragraphs, bold text, and images
   const formatContent = (content) => {
     return content.split('\n\n').map((paragraph, index) => {
+      const trimmed = paragraph.trim();
+
+      // Check if paragraph is an image marker [IMG:/path]
+      if (trimmed.startsWith('[IMG:') && trimmed.endsWith(']')) {
+        const imgPath = trimmed.slice(5, -1);
+        return (
+          <div key={index} className="my-8 rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src={imgPath}
+              alt="Blog illustration"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
+        );
+      }
+
       // Check if paragraph starts with **
-      if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-        const text = paragraph.slice(2, -2);
+      if (trimmed.startsWith('**') && trimmed.endsWith('**')) {
+        const text = trimmed.slice(2, -2);
         return (
           <h3 key={index} className="text-xl font-bold text-[#003366] mt-8 mb-4">
             {text}
