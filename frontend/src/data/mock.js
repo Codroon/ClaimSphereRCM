@@ -4,9 +4,9 @@ export const companyInfo = {
   name: "ClaimSphere",
   tagline: "Trusted Healthcare Revenue Cycle Solutions for U.S. Providers",
   description: "Empowering healthcare providers with cutting-edge revenue cycle management solutions that maximize reimbursements and minimize denials.",
-  phone: "1-800-CLAIM-RCM",
+  phone: "+1 (307) 400-1621",
   email: "contact@claimsphere.com",
-  address: "500 Healthcare Plaza, Suite 200, Dallas, TX 75201"
+  address: "525 Randall Ave Ste 100, Cheyenne, WY 82001"
 };
 
 export const certifications = [

@@ -76,26 +76,45 @@ const PricingModal = ({ isOpen, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    toast.success('Thank you for your interest!', {
-      description: 'Our team will contact you shortly with pricing details.',
-    });
-    
-    setFormData({
-      firstName: '',
-      lastName: '',
-      phone: '',
-      email: '',
-      practiceName: '',
-      numberOfDoctors: '',
-      specialty: '',
-      solutions: []
-    });
-    setIsSubmitting(false);
-    onClose();
+
+    try {
+      const response = await fetch('https://submit-form.com/l1C0vmLXg', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          _formName: 'Pricing Inquiry',
+          ...formData,
+          solutions: formData.solutions.join(', '),
+        }),
+      });
+
+      if (!response.ok) throw new Error('Submission failed');
+
+      toast.success('Thank you for your interest!', {
+        description: 'Our team will contact you shortly with pricing details.',
+      });
+
+      setFormData({
+        firstName: '',
+        lastName: '',
+        phone: '',
+        email: '',
+        practiceName: '',
+        numberOfDoctors: '',
+        specialty: '',
+        solutions: []
+      });
+      onClose();
+    } catch (error) {
+      toast.error('Something went wrong. Please try again.', {
+        description: 'If the issue persists, please contact us directly.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
