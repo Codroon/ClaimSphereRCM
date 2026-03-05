@@ -65,7 +65,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
             {/* Logo */}
             <div className="flex items-center mb-6">
-              <img 
+              <img
                 src="https://customer-assets.emergentagent.com/job_669b2369-d3e5-48aa-96b9-c999516fb39b/artifacts/d9nyua1i_Gemini_Generated_Image_bhdz8obhdz8obhdz-removebg-preview.png"
                 alt="ClaimSphere RCM"
                 className="h-14 w-auto"
@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
 
             <p className="text-white/70 mb-6 leading-relaxed max-w-sm">
-              Empowering healthcare providers with innovative revenue cycle solutions 
+              Empowering healthcare providers with innovative revenue cycle solutions
               for over 30 years.
             </p>
 
@@ -203,15 +203,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Sticky CTA (for mobile) */}
-      <div className="fixed bottom-0 left-0 right-0 lg:hidden bg-[#003366]/95 backdrop-blur-lg border-t border-white/10 p-4 z-40">
-        <button
-          onClick={() => scrollToSection('#contact')}
-          className="w-full py-4 bg-[#50C878] hover:bg-[#45b56a] text-white font-semibold rounded-xl transition-all duration-300"
-        >
-          Schedule Consultation
-        </button>
-      </div>
+
     </footer>
   );
 };
