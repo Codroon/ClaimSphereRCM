@@ -5,7 +5,7 @@ export const companyInfo = {
   tagline: "Trusted Healthcare Revenue Cycle Solutions for U.S. Providers",
   description: "Empowering healthcare providers with cutting-edge revenue cycle management solutions that maximize reimbursements and minimize denials.",
   phone: "+1 (307) 400-1621",
-  email: "contact@claimsphere.com",
+  email: "info@claimspherercm.com",
   address: "525 Randall Ave Ste 100, Cheyenne, WY 82001"
 };
 
