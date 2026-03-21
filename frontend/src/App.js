@@ -30,7 +30,6 @@ const LandingPage = () => {
         <Contact />
       </main>
       <Footer />
-      <ChatBot />
     </div>
   );
 };
@@ -44,6 +43,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
+        <ChatBot />
       </BrowserRouter>
     </div>
   );
