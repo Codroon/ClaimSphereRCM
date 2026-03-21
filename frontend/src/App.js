@@ -13,6 +13,7 @@ import BlogSection from "./components/BlogSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BlogPost from "./components/BlogPost";
+import ChatBot from "./components/ChatBot";
 
 const LandingPage = () => {
   return (
@@ -29,6 +30,7 @@ const LandingPage = () => {
         <Contact />
       </main>
       <Footer />
+      <ChatBot />
     </div>
   );
 };

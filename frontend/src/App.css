@@ -281,3 +281,15 @@ a, button, input, textarea {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Chat Widget Animation */
+@keyframes chatSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
