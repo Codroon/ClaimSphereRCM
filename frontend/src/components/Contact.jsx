@@ -219,6 +219,18 @@ const Contact = () => {
                   />
                 </div>
 
+                {/* SMS Consent */}
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  By providing your phone number and clicking submit, you agree to receive SMS
+                  messages from ClaimSphere RCM LLC. Message and data rates may apply. Message
+                  frequency varies. Reply <strong>STOP</strong> to opt out, <strong>HELP</strong>{' '}
+                  for help. View our{' '}
+                  <a href="/privacy-policy" className="text-[#008080] hover:underline">
+                    Privacy Policy
+                  </a>{' '}
+                  for more details.
+                </p>
+
                 <Button
                   type="submit"
                   disabled={isSubmitting}

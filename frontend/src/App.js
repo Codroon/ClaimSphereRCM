@@ -14,6 +14,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BlogPost from "./components/BlogPost";
 import BlogPage from "./components/BlogPage";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 const LandingPage = () => {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </BrowserRouter>
     </div>

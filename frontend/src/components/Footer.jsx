@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
 import { companyInfo } from '../data/mock';
 
@@ -28,7 +29,7 @@ const Footer = () => {
       { label: 'News', href: '#' }
     ],
     legal: [
-      { label: 'Privacy Policy', href: '#' },
+      { label: 'Privacy Policy', href: '/privacy-policy', isRoute: true },
       { label: 'Terms of Service', href: '#' },
       { label: 'HIPAA Compliance', href: '#' },
       { label: 'Security', href: '#' }
@@ -165,12 +166,21 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.legal.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-white/70 hover:text-[#50C878] transition-colors"
-                  >
-                    {link.label}
-                  </a>
+                  {link.isRoute ? (
+                    <Link
+                      to={link.href}
+                      className="text-white/70 hover:text-[#50C878] transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-white/70 hover:text-[#50C878] transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -182,9 +192,13 @@ const Footer = () => {
       <div className="relative border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-white/60 text-sm text-center sm:text-left">
-              © {currentYear} {companyInfo.name}. All rights reserved.
-            </p>
+            <div className="flex flex-col sm:flex-row items-center gap-3 text-white/60 text-sm text-center sm:text-left">
+              <p>© {currentYear} {companyInfo.name}. All rights reserved.</p>
+              <span className="hidden sm:inline">·</span>
+              <Link to="/privacy-policy" className="hover:text-[#50C878] transition-colors underline underline-offset-2">
+                Privacy Policy
+              </Link>
+            </div>
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2 text-sm text-white/60">
                 <div className="w-6 h-6 rounded bg-white/10 flex items-center justify-center text-xs font-bold text-[#50C878]">
