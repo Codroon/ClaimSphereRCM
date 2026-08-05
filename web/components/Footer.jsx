@@ -1,0 +1,161 @@
+'use client';
+import React from 'react';
+import Link from 'next/link';
+import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { companyInfo } from '../data/mock';
+import { services } from '../data/services';
+import { specialties } from '../data/specialties';
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  const footerLinks = {
+    services: services.map((s) => ({
+      label: s.shortTitle,
+      href: `/services/${s.slug}`,
+    })),
+    specialties: specialties.slice(0, 5).map((s) => ({
+      label: s.name,
+      href: `/specialties/${s.slug}`,
+    })),
+    company: [
+      { label: 'About Us', href: '/about' },
+      { label: 'Why Choose Us', href: '/#why-us' },
+      { label: 'Testimonials', href: '/#testimonials' },
+      { label: 'Contact', href: '/contact' },
+    ],
+    resources: [
+      { label: 'Blog', href: '/blog' },
+      { label: 'FAQs', href: '/#faq' },
+      { label: 'All Services', href: '/services' },
+      { label: 'All Specialties', href: '/specialties' },
+    ],
+  };
+
+  const socialLinks = [
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/claimspherercm/', label: 'LinkedIn' },
+    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Facebook, href: '#', label: 'Facebook' },
+  ];
+
+  const columns = [
+    { title: 'Services', links: footerLinks.services },
+    { title: 'Specialties', links: footerLinks.specialties },
+    { title: 'Company', links: footerLinks.company },
+    { title: 'Resources', links: footerLinks.resources },
+  ];
+
+  return (
+    <footer className="relative bg-[#003366] text-white overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+            backgroundSize: '32px 32px',
+          }}
+        ></div>
+      </div>
+
+      {/* Main Footer Content */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-12">
+          {/* Brand Column */}
+          <div className="col-span-2 md:col-span-3 lg:col-span-2">
+            <div className="flex items-center mb-6">
+              <img
+                src="https://customer-assets.emergentagent.com/job_669b2369-d3e5-48aa-96b9-c999516fb39b/artifacts/d9nyua1i_Gemini_Generated_Image_bhdz8obhdz8obhdz-removebg-preview.png"
+                alt="ClaimSphere RCM"
+                className="h-14 w-auto"
+              />
+            </div>
+
+            <p className="text-white/70 mb-6 leading-relaxed max-w-sm">
+              Trusted healthcare revenue cycle management for U.S. providers — maximizing
+              reimbursements and reducing denials.
+            </p>
+
+            <div className="space-y-3">
+              <a href={`tel:${companyInfo.phone}`} className="flex items-center gap-3 text-white/70 hover:text-[#50C878] transition-colors">
+                <Phone className="w-4 h-4" />
+                <span>{companyInfo.phone}</span>
+              </a>
+              <a href={`mailto:${companyInfo.email}`} className="flex items-center gap-3 text-white/70 hover:text-[#50C878] transition-colors">
+                <Mail className="w-4 h-4" />
+                <span>{companyInfo.email}</span>
+              </a>
+              <div className="flex items-start gap-3 text-white/70">
+                <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
+                <span>{companyInfo.address}</span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 mt-6">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#50C878] transition-colors duration-300"
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Link Columns */}
+          {columns.map((column) => (
+            <div key={column.title}>
+              <h4 className="font-semibold text-lg mb-4">{column.title}</h4>
+              <ul className="space-y-3">
+                {column.links.map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className="text-white/70 hover:text-[#50C878] transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="relative border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-3 text-white/60 text-sm text-center sm:text-left">
+              <p>© {currentYear} {companyInfo.name}. All rights reserved.</p>
+              <span className="hidden sm:inline">·</span>
+              <Link href="/privacy-policy" className="hover:text-[#50C878] transition-colors underline underline-offset-2">
+                Privacy Policy
+              </Link>
+            </div>
+            <div className="flex items-center gap-6">
+              <div className="flex items-center gap-2 text-sm text-white/60">
+                <div className="w-6 h-6 rounded bg-white/10 flex items-center justify-center text-xs font-bold text-[#50C878]">
+                  H
+                </div>
+                <span>HIPAA Compliant</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-white/60">
+                <div className="w-6 h-6 rounded bg-white/10 flex items-center justify-center text-xs font-bold text-[#50C878]">
+                  S
+                </div>
+                <span>SOC 2 Certified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
